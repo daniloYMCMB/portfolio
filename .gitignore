@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/react-portfolio/node_modules
 
 # testing
 /coverage
