@@ -17,11 +17,11 @@ module.exports = (env) => {
   return {
 
     entry: {
-      invie: path.resolve(__dirname, 'src/index.js'),
+      "portfolio": path.resolve(__dirname, 'index.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'js/[name].[hash].js',
+      filename: 'js/[name].js',
       publicPath: path.resolve(__dirname, 'dist')+"/",
       chunkFilename: 'js/[id].[chunkhash].js',
     },
