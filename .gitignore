@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /react-portfolio/node_modules
+/src/banner/components/DJI_0014.MOV
 
 # testing
 /coverage

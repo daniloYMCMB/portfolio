@@ -1,14 +1,50 @@
-.Title {
-	cursor: pointer;
-	margin: 10px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
+body {
+	margin: 0;
+}
+
+.Relative {
+	position: relative;
+}
+
+.TitleAbsolute {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	z-index: 2;
 }
 
 .TitleMain {
-	width: 30%;
+	margin-top: 10vh;
+}
+
+.TitleImage {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	width: 20%;
+	margin: auto;
+}
+
+.ButtonBanner {
+	background: red;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+}
+
+@media screen and (max-width: 767px) {
+	.TitleMain {
+		margin-top: 5vh;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.TitleMain {
+		margin-top: 1vh;
+	}
 }
