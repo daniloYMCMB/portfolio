@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    "portfolio": path.resolve(__dirname, 'index.js'),
+    "portfolio": path.resolve(__dirname, 'src/entries/index.js'),  
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

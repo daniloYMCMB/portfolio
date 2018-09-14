@@ -5,7 +5,8 @@ import Video from './video.js';
 class Title extends Component {
 
 	state = {
-		title: 'Danilo Viacava'
+		title: 'Danilo Viacava',
+		image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png'
 	}
 
 	constructor(props) {
@@ -40,13 +41,12 @@ class Title extends Component {
 		}*/
 
 		return (
-			<div className="Relative">
-				<Video />
+			<div className="">
 				<div className="TitleAbsolute">
 					<p className="TitleMain">{this.state.title}</p>
 					<img 
 						className="TitleImage"
-						src={this.props.image}
+						src={this.state.image}
 						alt=""
 						width={"auto"}
 						height={"auto"}

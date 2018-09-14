@@ -10,7 +10,7 @@ export default (props) => {
       playsInline
       poster=""
       src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-      //src="/src/banner/components/DJI_0014.MOV"
+      src="/src/banner/components/DJI_0014.MOV"
     />
   )
 }
