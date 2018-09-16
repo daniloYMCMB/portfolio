@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './title.css';
 import Video from './video.js';
 
@@ -6,13 +7,16 @@ class Title extends Component {
 
 	state = {
 		title: 'Danilo Viacava',
-		image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png'
+		image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png',
+		subtitle: 'Tecnología que cabe en la palma de tus manos',
 	}
 
 	constructor(props) {
 		super(props)
 		this.state = {
 			title: props.title,
+			image: props.image,
+			subtitle: this.state.subtitle,
 		}
 	}
 
@@ -43,20 +47,33 @@ class Title extends Component {
 		return (
 			<div className="">
 				<div className="TitleAbsolute">
-					<p className="TitleMain">{this.state.title}</p>
+					<p className="TitleMain">
+						{this.props.title}
+					</p>
 					<img 
 						className="TitleImage"
-						src={this.state.image}
+						src={this.props.image}
 						alt=""
 						width={"auto"}
 						height={"auto"}
 					/>
-					<h3>Subtitle</h3>
-					<button className="ButtonBanner" onClick={this.handleClick}>Presioname</button>
+					<h3>{this.state.subtitle}</h3>
+					<button 
+						className="ButtonBanner" 
+						onClick={this.handleClick}
+					>
+						Presioname
+					</button>
 				</div>
 			</div>
 		)
 	}
+}
+
+Title.propTypes = {
+	image: PropTypes.string.isRequired,
+	title: PropTypes.string,
+	//type: PropTypes.onOff(['video', 'audio']),
 }
 
 export default Title;

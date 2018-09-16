@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/daniloYMCMB/portfolio#readme",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "16.5.0",
     "react-dom": "16.5.0",
     "video-react": "^0.13.0"

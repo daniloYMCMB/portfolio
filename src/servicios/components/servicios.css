@@ -1,0 +1,54 @@
+.Servicios {
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background: #b3b3b3;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: stretch;
+	align-items: stretch;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.ServiciosTitle {
+	font-family: cursive;
+	font-size: 20px;
+	text-decoration: underline;
+	margin: 0;
+}
+.ServiciosItem {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 20px;
+}
+.ServiciosItems {
+	color: white;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.ServiciosItems img {
+	width: 150px;
+	margin: auto;
+	height: auto;
+	display: block;
+}
+
+
