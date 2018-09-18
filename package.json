@@ -38,9 +38,11 @@
   },
   "homepage": "https://github.com/daniloYMCMB/portfolio#readme",
   "dependencies": {
+    "@fullpage/react-fullpage": "0.0.9",
     "prop-types": "^15.6.2",
     "react": "16.5.0",
     "react-dom": "16.5.0",
+    "react-iframe": "^1.3.0",
     "video-react": "^0.13.0"
   }
 }

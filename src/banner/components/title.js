@@ -45,26 +45,12 @@ class Title extends Component {
 		}*/
 
 		return (
-			<div className="">
-				<div className="TitleAbsolute">
-					<p className="TitleMain">
-						{this.props.title}
-					</p>
-					<img 
-						className="TitleImage"
-						src={this.props.image}
-						alt=""
-						width={"auto"}
-						height={"auto"}
-					/>
-					<h3>{this.state.subtitle}</h3>
-					<button 
-						className="ButtonBanner" 
-						onClick={this.handleClick}
-					>
-						Presioname
-					</button>
-				</div>
+			<div className="TitleAbsolute">
+				<p className="TitleMain">
+					{this.props.title}
+				</p>
+				<h3>{this.state.subtitle}</h3>
+				
 			</div>
 		)
 	}
